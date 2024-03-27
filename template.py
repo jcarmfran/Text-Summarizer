@@ -1,7 +1,3 @@
-"""
-Script designed to automate project's folder structure
-"""
-
 import os
 from pathlib import Path
 import logging
