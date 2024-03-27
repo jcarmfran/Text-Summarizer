@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+
 @dataclass(frozen=True) # frozen=True: no additional variables
 class DataIngestionConfig:
     root_dir: Path
@@ -16,3 +17,8 @@ class DataValidationConfig:
     ALL_REQUIRED_FILES: list
 
 
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    tokenizer_name: Path
